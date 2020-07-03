@@ -56,6 +56,9 @@ function App() {
         <Dugme text="А" value="А" onClicked={steganjeDugme}/>
         <Dugme text="а" value="а" onClicked={steganjeDugme}/>
         <Dugme text="Б" value="Б" onClicked={steganjeDugme}/>
+        <Dugme text="б" value="б" onClicked={steganjeDugme}/>
+        <Dugme text="В" value="В" onClicked={steganjeDugme}/>
+        <Dugme text="в" value="в" onClicked={steganjeDugme}/>
       </Sekcija>
       <Sekcija naslov="Србски">
         <Dugme text="Ђ" value="Ђ" onClicked={steganjeDugme}/>
