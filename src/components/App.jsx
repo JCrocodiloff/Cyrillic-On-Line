@@ -23,14 +23,31 @@ function App() {
     var myElement = document.getElementById('outputTxt');
     setStartPos(myElement.selectionStart);
     setEndPos(myElement.selectionEnd);
-    console.log(startPos);
-    console.log(endPos);
+    //console.log(startPos);
+    //console.log(endPos);
   }
 
+  //Navigacija niz tekst so strelki
+  var el=document.getElementById('outputTxt');
+  if(el){
+    el.addEventListener('keydown', function(event){
+      if(event.keyCode === 37) { //Leva strelka
+        setStartPos(el.selectionStart - 1);
+        setEndPos(el.selectionEnd - 1);
+      }
+      if(event.keyCode === 39) { //Desna strelka
+        setStartPos(el.selectionStart + 1);
+        setEndPos(el.selectionEnd + 1);
+      }
+    });
+  }
+  
+
+  //Steganje dugme
   function steganjeDugme(bukva){
     setTekst(prevVal => {
-      console.log(startPos);
-      console.log(endPos);
+      //console.log(startPos);
+      //console.log(endPos);
       return prevVal.substring(0,startPos) + bukva + prevVal.substring(endPos,prevVal.length)
       //Stara funkcija - PROPAS:
       /* if(prevVal.length===0){return prevVal + bukva;}
