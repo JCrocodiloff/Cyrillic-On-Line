@@ -76,6 +76,60 @@ function App() {
         <Dugme text="б" value="б" onClicked={steganjeDugme}/>
         <Dugme text="В" value="В" onClicked={steganjeDugme}/>
         <Dugme text="в" value="в" onClicked={steganjeDugme}/>
+        <Dugme text="Г" value="Г" onClicked={steganjeDugme}/>
+        <Dugme text="г" value="г" onClicked={steganjeDugme}/>
+        <Dugme text="Д" value="Д" onClicked={steganjeDugme}/>
+        <Dugme text="д" value="д" onClicked={steganjeDugme}/>
+        <Dugme text="Ѓ" value="Ѓ" onClicked={steganjeDugme}/>
+        <Dugme text="ѓ" value="ѓ" onClicked={steganjeDugme}/>
+        <Dugme text="Е" value="Е" onClicked={steganjeDugme}/>
+        <Dugme text="е" value="е" onClicked={steganjeDugme}/>
+        <Dugme text="Ж" value="Ж" onClicked={steganjeDugme}/>
+        <Dugme text="ж" value="ж" onClicked={steganjeDugme}/>
+        <Dugme text="З" value="З" onClicked={steganjeDugme}/>
+        <Dugme text="з" value="з" onClicked={steganjeDugme}/>
+        <Dugme text="Ѕ" value="Ѕ" onClicked={steganjeDugme}/>
+        <Dugme text="ѕ" value="ѕ" onClicked={steganjeDugme}/>
+        <Dugme text="И" value="И" onClicked={steganjeDugme}/>
+        <Dugme text="и" value="и" onClicked={steganjeDugme}/>
+        <Dugme text="Ј" value="Ј" onClicked={steganjeDugme}/>
+        <Dugme text="ј" value="ј" onClicked={steganjeDugme}/>
+        <Dugme text="К" value="К" onClicked={steganjeDugme}/>
+        <Dugme text="к" value="к" onClicked={steganjeDugme}/>
+        <Dugme text="Л" value="Л" onClicked={steganjeDugme}/>
+        <Dugme text="љ" value="љ" onClicked={steganjeDugme}/>
+        <Dugme text="М" value="М" onClicked={steganjeDugme}/>
+        <Dugme text="м" value="м" onClicked={steganjeDugme}/>
+        <Dugme text="Н" value="Н" onClicked={steganjeDugme}/>
+        <Dugme text="н" value="н" onClicked={steganjeDugme}/>
+        <Dugme text="Њ" value="Њ" onClicked={steganjeDugme}/>
+        <Dugme text="њ" value="њ" onClicked={steganjeDugme}/>
+        <Dugme text="О" value="О" onClicked={steganjeDugme}/>
+        <Dugme text="о" value="о" onClicked={steganjeDugme}/>
+        <Dugme text="П" value="П" onClicked={steganjeDugme}/>
+        <Dugme text="п" value="п" onClicked={steganjeDugme}/>
+        <Dugme text="Р" value="Р" onClicked={steganjeDugme}/>
+        <Dugme text="р" value="р" onClicked={steganjeDugme}/>
+        <Dugme text="С" value="С" onClicked={steganjeDugme}/>
+        <Dugme text="с" value="с" onClicked={steganjeDugme}/>
+        <Dugme text="Т" value="Т" onClicked={steganjeDugme}/>
+        <Dugme text="т" value="т" onClicked={steganjeDugme}/>
+        <Dugme text="Ќ" value="Ќ" onClicked={steganjeDugme}/>
+        <Dugme text="ќ" value="ќ" onClicked={steganjeDugme}/>
+        <Dugme text="У" value="У" onClicked={steganjeDugme}/>
+        <Dugme text="у" value="у" onClicked={steganjeDugme}/>
+        <Dugme text="Ф" value="Ф" onClicked={steganjeDugme}/>
+        <Dugme text="ф" value="ф" onClicked={steganjeDugme}/>
+        <Dugme text="Х" value="Х" onClicked={steganjeDugme}/>
+        <Dugme text="х" value="х" onClicked={steganjeDugme}/>
+        <Dugme text="Ц" value="Ц" onClicked={steganjeDugme}/>
+        <Dugme text="ц" value="ц" onClicked={steganjeDugme}/>
+        <Dugme text="Ч" value="Ч" onClicked={steganjeDugme}/>
+        <Dugme text="ч" value="ч" onClicked={steganjeDugme}/>
+        <Dugme text="Џ" value="Џ" onClicked={steganjeDugme}/>
+        <Dugme text="џ" value="џ" onClicked={steganjeDugme}/>
+        <Dugme text="Ш" value="Ш" onClicked={steganjeDugme}/>
+        <Dugme text="ш" value="ш" onClicked={steganjeDugme}/>
       </Sekcija>
       <Sekcija naslov="Србски">
         <Dugme text="Ђ" value="Ђ" onClicked={steganjeDugme}/>
@@ -104,7 +158,32 @@ function App() {
         <Dugme text="я" value="я" onClicked={steganjeDugme}/>
       </Sekcija>
       <Sekcija naslov="Букви со апострофи">
-        <Dugme text="я" value="я" onClicked={steganjeDugme} />
+        <Dugme text="À" value="À" onClicked={steganjeDugme} />
+        <Dugme text="à" value="à" onClicked={steganjeDugme} />
+        <Dugme text="Ѐ" value="Ѐ" onClicked={steganjeDugme} />
+        <Dugme text="è" value="è" onClicked={steganjeDugme} />
+        <Dugme text="Ѝ" value="Ѝ" onClicked={steganjeDugme} />
+        <Dugme text="ѝ" value="ѝ" onClicked={steganjeDugme} />
+        <Dugme text="Ò" value="Ò" onClicked={steganjeDugme} />
+        <Dugme text="ò" value="ò" onClicked={steganjeDugme} />
+        <Dugme text="Ӳ" value="Ӳ" onClicked={steganjeDugme} />
+        <Dugme text="ӳ" value="ӳ" onClicked={steganjeDugme} />
+      </Sekcija>
+      <Sekcija naslov="Старословенски">
+        <Dugme text="Ѣ" value="Ѣ" onClicked={steganjeDugme} />
+        <Dugme text="ѣ" value="ѣ" onClicked={steganjeDugme} />
+        <Dugme text="Ѳ" value="Ѳ" onClicked={steganjeDugme} />
+        <Dugme text="ѳ" value="ѳ" onClicked={steganjeDugme} />
+        <Dugme text="Ѵ" value="Ѵ" onClicked={steganjeDugme} />
+        <Dugme text="ѵ" value="ѵ" onClicked={steganjeDugme} />
+        <Dugme text="Ѫ" value="Ѫ" onClicked={steganjeDugme} />
+        <Dugme text="ѫ" value="ѫ" onClicked={steganjeDugme} />
+        <Dugme text="Ѧ" value="Ѧ" onClicked={steganjeDugme} />
+        <Dugme text="ѧ" value="ѧ" onClicked={steganjeDugme} />
+        <Dugme text="Ѭ" value="Ѭ" onClicked={steganjeDugme} />
+        <Dugme text="ѭ" value="ѭ" onClicked={steganjeDugme} />
+        <Dugme text="Ѩ" value="Ѩ" onClicked={steganjeDugme} />
+        <Dugme text="ѩ" value="ѩ" onClicked={steganjeDugme} />
       </Sekcija>
       <br />
       <div className="container">
