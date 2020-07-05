@@ -2,6 +2,8 @@ import React from "react";
 import Sekcija from "./Sekcija.jsx";
 import Dugme from "./Dugme.jsx";
 import Header from "./Header.jsx";
+import Tooltip from '@material-ui/core/Tooltip';
+import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import bgImg from "../images/pozadina.png";
 
 function App() {
@@ -66,6 +68,19 @@ function App() {
     setEndPos(startPos+1);
   }
 
+  //Dugme za kopiranje tekst
+  function copyText(){
+    var outputText=document.getElementById("outputTxt");
+    outputText.select();
+    outputText.select(0,99999)
+    document.execCommand("copy");
+    handleTooltipOpen(); //Povikuvanje funkcija da se prikaze tooltip.
+  }
+  //Tooltip
+  const [open, setOpen] = React.useState(false);
+  const handleTooltipClose = () => {setOpen(false);};
+  const handleTooltipOpen = () => {setOpen(true);};
+
   return(
     <div style={{ backgroundImage:`url(${bgImg})`}} className="sve">
       <Header />
@@ -97,6 +112,8 @@ function App() {
         <Dugme text="К" value="К" onClicked={steganjeDugme}/>
         <Dugme text="к" value="к" onClicked={steganjeDugme}/>
         <Dugme text="Л" value="Л" onClicked={steganjeDugme}/>
+        <Dugme text="л" value="л" onClicked={steganjeDugme}/>
+        <Dugme text="Љ" value="Љ" onClicked={steganjeDugme}/>
         <Dugme text="љ" value="љ" onClicked={steganjeDugme}/>
         <Dugme text="М" value="М" onClicked={steganjeDugme}/>
         <Dugme text="м" value="м" onClicked={steganjeDugme}/>
@@ -188,6 +205,26 @@ function App() {
       <br />
       <div className="container">
         <textarea id="outputTxt" onChange={kucanje} value={tekst} placeholder="Тайп зъ тэкст хыр." onClick={cursorPositionClick}></textarea>
+        <ClickAwayListener onClickAway={handleTooltipClose}>
+            <div>
+              <Tooltip
+                PopperProps={{
+                  disablePortal: true,
+                }}
+                onClose={handleTooltipClose}
+                open={open}
+                disableFocusListener
+                disableHoverListener
+                disableTouchListener
+                arrow
+                placement="right"
+                title="Ископирано"
+              >
+                <button className="copyBtn" onClick={copyText}>Копирај</button>
+              </Tooltip>
+            </div>
+          </ClickAwayListener>
+        
       </div>
       
     </div>

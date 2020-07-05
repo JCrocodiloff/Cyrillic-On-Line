@@ -72,7 +72,7 @@ h1{
 }
 
 /* ------- DUGME ------*/
-.bukvaDugme{
+.bukvaDugme, .copyBtn{
   margin:0.1rem;
   border: 2px solid #2a1b08;
   border-radius: 3px;
@@ -83,7 +83,7 @@ h1{
   font-size: 1.5rem;
 }
 
-.bukvaDugme:hover{
+.bukvaDugme:hover, .copyBtn:hover{
   background-color: rgba(230,210,150,0.5);
   color: #2a1b08;
   cursor: pointer;
@@ -91,4 +91,10 @@ h1{
 
 .bukvaDugme:active{
   background-color: rgba(201, 108, 65, 0.5);
+}
+
+/*Dugme za kopiranje */
+.copyBtn{
+  font-size: 1rem;
+  margin: 0.1rem 0.4rem;
 }
