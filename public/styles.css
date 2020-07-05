@@ -28,7 +28,7 @@ textarea{
 /* ----- HEADER ----- */
 .header{
   color: rgb(238,223,179);
-  background-color: #2a1b08;
+  background-color: rgba(42,21,8,0.85);
   margin-bottom: 3rem;
   display: flex;
   text-align: center;
@@ -97,4 +97,22 @@ h1{
 .copyBtn{
   font-size: 1rem;
   margin: 0.1rem 0.4rem;
+}
+
+/*---Footer---*/
+.footer{
+  background-color: rgba(230,210,150,0.75);
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 3rem;
+}
+
+.footer p,a{
+  margin-bottom: 0.1rem;
+  color:#5f5138;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color:#2a1b08;
 }

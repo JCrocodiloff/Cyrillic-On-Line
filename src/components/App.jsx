@@ -2,6 +2,7 @@ import React from "react";
 import Sekcija from "./Sekcija.jsx";
 import Dugme from "./Dugme.jsx";
 import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 import Tooltip from '@material-ui/core/Tooltip';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import bgImg from "../images/pozadina.png";
@@ -226,7 +227,7 @@ function App() {
           </ClickAwayListener>
         
       </div>
-      
+      <Footer />
     </div>
     
   );
