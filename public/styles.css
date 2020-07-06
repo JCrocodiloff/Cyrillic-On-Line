@@ -1,7 +1,9 @@
 /*Opsto*/
 body{
   margin:0;
+  font-family:"Montserrat", sans-serif;
 }
+
 .sve {
   /*background-image: url("https://qph.fs.quoracdn.net/main-qimg-0b4149019fffd913a25da62e66eefc5a");*/
   min-height: 100vh; /*da ne se pojavue ruzna bela lenta dole*/
@@ -81,6 +83,7 @@ h1{
   background-color: #2a1b08;
   color: #fff;
   font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
 }
 
 .bukvaDugme:hover, .copyBtn:hover{
