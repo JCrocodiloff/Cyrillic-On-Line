@@ -11,7 +11,7 @@ function Sekcija(props){
         <div className="container">
             <div className={"sekcija"+(expand?"":" nonExpSekcija")}>
                 <div className="sekcNaslov">
-                    <h1 onClick={steganje}>{props.naslov+(expand?"":" ⤵️")}</h1>
+                    <h1 onClick={steganje}>{props.naslov+(expand?"":" 🔻")}</h1>
                 </div>
             
                 {/* Да се прикажуваат дугмињата само кога секцијата е стегната. */}
