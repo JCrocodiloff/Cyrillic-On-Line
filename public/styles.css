@@ -106,20 +106,21 @@ h1{
 
 /*---Footer---*/
 .footer{
-  background-color: rgba(230,210,150,0.75);
+  /*background-color: rgba(230,210,150,0.75);*/
   text-align: center;
   padding: 1.2rem;
   margin-top: 3rem;
 }
 
 .footer p,a{
+  text-shadow: 2px 2px 3px #ffffff;
   margin-bottom: 0.1rem;
-  color:#5f5138;
+  color:#2a1b08;
   text-decoration: none;
 }
 
 .footer a:hover{
-  color:#2a1b08;
+  color:#5f5138;
 }
 
 /*--Za Mali ekrani --*/
