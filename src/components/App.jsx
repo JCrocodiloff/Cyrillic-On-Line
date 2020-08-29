@@ -69,6 +69,19 @@ function App() {
     setEndPos(startPos+1);
   }
 
+  //Brisenje so dugme
+  function brisenje(arg){   //arg ne se koristi
+    if(startPos===endPos && startPos>0){
+      setTekst(prevVal => {return prevVal.substring(0,startPos-1)+prevVal.substring(endPos,prevVal.length)});
+      setStartPos(startPos-1);
+      setEndPos(endPos-1);
+    }
+    if(startPos<endPos){
+      setTekst(prevVal => {return prevVal.substring(0,startPos)+prevVal.substring(endPos,prevVal.length)});
+      setEndPos(startPos);
+    }
+  } 
+
   //Dugme za kopiranje tekst
   function copyText(){
     var outputText=document.getElementById("outputTxt");
@@ -203,6 +216,11 @@ function App() {
         <Dugme text="Ѩ" value="Ѩ" onClicked={steganjeDugme} />
         <Dugme text="ѩ" value="ѩ" onClicked={steganjeDugme} />
       </Sekcija>
+      <div className="container">
+        <Dugme text="Празно место" value=" " onClicked={steganjeDugme} />
+        <Dugme text="Бриши" value="" onClicked={brisenje} />
+      </div>
+      
       <br />
       <div className="container">
         <textarea id="outputTxt" onChange={kucanje} value={tekst} placeholder="Тайп зъ тэкст хыр." onClick={cursorPositionClick}></textarea>
